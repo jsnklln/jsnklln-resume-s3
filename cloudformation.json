@@ -4,7 +4,7 @@
         "S3Bucket": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
-            	"BucketName": "jsnklln-resume-boing",
+            	"BucketName": "jsnklln-resume",
                 "PublicAccessBlockConfiguration": {
                     "BlockPublicAcls": false,
                     "BlockPublicPolicy": false,
