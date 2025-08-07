@@ -16,8 +16,8 @@
                     "ErrorDocument": "error.html"
                 }
             },
-            "DeletionPolicy": "Retain",
-            "UpdateReplacePolicy": "Retain"
+            "DeletionPolicy": "Delete",
+            "UpdateReplacePolicy": "Delete"
         },
         "BucketPolicy": {
             "Type": "AWS::S3::BucketPolicy",
