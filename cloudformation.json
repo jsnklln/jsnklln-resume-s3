@@ -4,6 +4,24 @@
         "S3Bucket": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
+            	"BucketName": "jsnklln-resume-blah",
+                "PublicAccessBlockConfiguration": {
+                    "BlockPublicAcls": false,
+                    "BlockPublicPolicy": false,
+                    "IgnorePublicAcls": false,
+                    "RestrictPublicBuckets": false
+                },
+                "WebsiteConfiguration": {
+                    "IndexDocument": "index.html",
+                    "ErrorDocument": "error.html"
+                }
+            },
+            "DeletionPolicy": "Retain",
+            "UpdateReplacePolicy": "Retain"
+        },
+        "S3Bucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
             	"BucketName": "jsnklln-resume",
                 "PublicAccessBlockConfiguration": {
                     "BlockPublicAcls": false,
